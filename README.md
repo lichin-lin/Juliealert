@@ -3,7 +3,7 @@
 All you need is ``julie``
 ---
 JulieAlert let you display Javascript`s alert function with beautiful custom style. 
-![JulieAlert.gif](https://github.com/lichin-lin/Juliealert/JulieAlert.gif)
+![JulieAlert.gif](JulieAlert.gif)
 
 ## Setup
 ---
