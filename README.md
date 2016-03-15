@@ -30,6 +30,7 @@ $('button').click(function(){
   });
 });
 ```
+---
 
 2.With confirm & error button:
 ```javascript
@@ -43,6 +44,7 @@ $('button').click(function(){
   });
 });
 ```
+---
 
 
 3.Even with different animation style:
@@ -57,7 +59,7 @@ $('button').click(function(){
   });
 });
 ```
-
+---
 
 4.Last,custom your input in HTML style:
 ```javascript
@@ -71,3 +73,5 @@ $('button').click(function(){
   });
 });
 ```
+---
+
