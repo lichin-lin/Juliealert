@@ -1,3 +1,3 @@
 # Juliealert
----
-## use for better Alert function with beautful css-style
+
+## use for better alert function with beautiful css-style
