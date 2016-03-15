@@ -1,12 +1,13 @@
 $('.basic button').click(function(){
   Julie({
     title: "Julie!",
-    text: "Show you the Basic-Style",
+    text: "Nice to meet you!",
     confirmText: "ok",
     errorText:"",
-    Pop:false
+    Pop:false,
   });
 });
+
 
 $('.try-pop button').click(function(){
   Julie({
@@ -17,6 +18,7 @@ $('.try-pop button').click(function(){
     Pop: true
   });
 });
+
 
 $(".try-confirm button").click(function(){
   Julie({
@@ -32,11 +34,13 @@ $(".try-error button").click(function(){
     title: "Wait!there's more",
     text: "<h1>last demo style!<br>IT IS FANCY<br>HTML element<h1>",
     confirmText: "bro!",
-    errorText:"NO WAY!!",
+    errorText:"I will miss you!!",
     Pop:false
   });
 });
 
+
+// ===== Function Start =====
 function Julie(content){
   if(isEmpty(content.errorText)){
     $('.Julie-Alert .error').css("display","none");
@@ -55,8 +59,6 @@ function Julie(content){
   $('.Julie-Alert .error').text(content.errorText);
 
   $('.Julie-board').css({
-    display:"block",
-    opacity:1,
     width: FindLarge(),
     height: FindLarge(),
     top: topOffset() + "px",
@@ -79,10 +81,7 @@ function Julie(content){
   
                           
   $('.Julie-Alert button').click(function(){
-    $('.Julie-board').css({
-      display:"none",
-      opacity:0
-    });//.removeClass('showJulieAlertBoard');
+    $('.Julie-board').removeClass('showJulieAlertBoard');
     $('.Julie-Alert').removeClass('showJulieAlert');
     $('.Julie-Alert').removeClass('showJulieAlertPop');
     $('.Julie-Alert') 
@@ -103,8 +102,8 @@ function FindLarge(){
   return $(window).width() > $(window).height() ? $(window).width() : $(window).height();
 }
 function topOffset(){
-  return $(window).width() > $(window).height() ? $(window).height()/2 - $(window).width() : 0;
+  return $(window).width() > $(window).height() ? $(window).height()/2 - $(window).width()/2 : 0;
 }
 function leftOffset(){
-  return $(window).width() > $(window).height() ? 0 : $(window).width()/2 - $(window).height();
+  return $(window).width() > $(window).height() ? 0 : $(window).width()/2 - $(window).height()/2;
 }

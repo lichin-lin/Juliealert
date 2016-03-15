@@ -35,7 +35,7 @@ button {
 .Julie .Julie-content {
   margin: 30px 0;
   width: 75%;
-  height: 600px;
+  height: auto;
   display: -moz-flex;
   display: -webkit-flex;
   display: flex;
@@ -107,7 +107,7 @@ button {
   bottom: 0;
   left: 0;
   z-index: 999;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.25);
 }
 .Julie-Alert {
   color: #6b6b6b;
@@ -178,6 +178,8 @@ button {
 .showJulieAlertBoard {
   -webkit-animation: showAlertBoard 0.3s;
   animation: showAlertBoard 0.3s;
+  opacity: 0.5;
+  display: block;
 }
 .showJulieAlert {
   -webkit-animation: showAlert 0.3s;
@@ -186,7 +188,7 @@ button {
 .showJulieAlertPop {
   -webkit-animation: showAlertPop 0.25s;
   animation: showAlertPop 0.25s;
-  animation-delay: 0.1s;
+  animation-delay: 0.125s;
 }
 .hideJulieAlert {
   -webkit-animation: hideAlert 0.3s;
@@ -218,57 +220,77 @@ button {
 }
 @-moz-keyframes showAlertBoard {
   0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
     transform: scale(0.5);
     -webkit-transform: scale(0.5);
-    opacity: 0.7;
+    display: block;
+    opacity: 0;
     border-radius: 50%;
   }
   100% {
     transform: scale(1);
     -webkit-transform: scale(1);
-    opacity: 1;
+    opacity: 0.5;
     border-radius: 1px;
   }
 }
 @-webkit-keyframes showAlertBoard {
   0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
     transform: scale(0.5);
     -webkit-transform: scale(0.5);
-    opacity: 0.7;
+    display: block;
+    opacity: 0;
     border-radius: 50%;
   }
   100% {
     transform: scale(1);
     -webkit-transform: scale(1);
-    opacity: 1;
+    opacity: 0.5;
     border-radius: 1px;
   }
 }
 @-o-keyframes showAlertBoard {
   0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
     transform: scale(0.5);
     -webkit-transform: scale(0.5);
-    opacity: 0.7;
+    display: block;
+    opacity: 0;
     border-radius: 50%;
   }
   100% {
     transform: scale(1);
     -webkit-transform: scale(1);
-    opacity: 1;
+    opacity: 0.5;
     border-radius: 1px;
   }
 }
 @keyframes showAlertBoard {
   0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
     transform: scale(0.5);
     -webkit-transform: scale(0.5);
-    opacity: 0.7;
+    display: block;
+    opacity: 0;
     border-radius: 50%;
   }
   100% {
     transform: scale(1);
     -webkit-transform: scale(1);
-    opacity: 1;
+    opacity: 0.5;
     border-radius: 1px;
   }
 }
@@ -326,7 +348,7 @@ button {
     -webkit-transform: scale(0.7);
     opacity: 0.5;
   }
-  40% {
+  50% {
     transform: scale(1.03);
     -webkit-transform: scale(1.03);
     opacity: 0.65;
@@ -348,7 +370,7 @@ button {
     -webkit-transform: scale(0.7);
     opacity: 0.5;
   }
-  40% {
+  50% {
     transform: scale(1.03);
     -webkit-transform: scale(1.03);
     opacity: 0.65;
@@ -370,7 +392,7 @@ button {
     -webkit-transform: scale(0.7);
     opacity: 0.5;
   }
-  40% {
+  50% {
     transform: scale(1.03);
     -webkit-transform: scale(1.03);
     opacity: 0.65;
@@ -392,7 +414,7 @@ button {
     -webkit-transform: scale(0.7);
     opacity: 0.5;
   }
-  40% {
+  50% {
     transform: scale(1.03);
     -webkit-transform: scale(1.03);
     opacity: 0.65;
