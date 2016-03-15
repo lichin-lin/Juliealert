@@ -1,12 +1,13 @@
 # JulieAlert
 
-All you need is ``julie``
----
+## All you need is ``julie``
 JulieAlert let you display Javascript`s alert function with beautiful custom style. 
-![JulieAlert.gif](JulieAlert.gif)
+![JulieAlert.gif](https://raw.githubusercontent.com/lichin-lin/Juliealert/master/JulieAlert.gif)
+
+
 
 ## Setup
----
+
 download the package and reference the JavaScript and CSS files manually:
 <pre><code>  &lt;script src="assets/juliealert.min.js"&gt;&lt;script&gt;
   &lt;link href="assets/juliealert.min.css" rel="stylesheet" &gt;
@@ -16,8 +17,9 @@ download the package and reference the JavaScript and CSS files manually:
 
 using jquery to control ```julie``` function:
 
-Basic style:
-<pre><code>$('button').click(function(){
+1.Basic style:
+```javascript
+$('button').click(function(){
   Julie({
     title: "Julie!",
     text: "Basic style!",
@@ -26,11 +28,11 @@ Basic style:
     Pop:false,
   });
 });
-</code></pre>
+```
 
-
-With confirm & error button:
-<pre><code>$('button').click(function(){
+2.With confirm & error button:
+```javascript
+$('button').click(function(){
   Julie({
     title: "Julie!",
     text: "do it!",
@@ -39,11 +41,12 @@ With confirm & error button:
     Pop:false,
   });
 });
-</code></pre>
+```
 
 
-Even with different animation style:
-<pre><code>$('button').click(function(){
+3.Even with different animation style:
+```javascript
+$('button').click(function(){
   Julie({
     title: "Julie!",
     text: "Popping",
@@ -52,16 +55,18 @@ Even with different animation style:
     Pop:true,
   });
 });
-</code></pre>
+```
 
-Even with different animation style:
-<pre><code>$('button').click(function(){
+
+4.Even with different animation style:
+```javascript
+$('button').click(function(){
   Julie({
     title: "Julie!",
-    text: "<h3>HTML inside~</h3>",
+    text: "<a>HTML inside~</a>",
     confirmText: "got it",
     errorText:"good bye",
     Pop:false,
   });
 });
-</code></pre>
+```

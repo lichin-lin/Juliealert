@@ -1,101 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-body {
-  padding: 0;
-  margin: 0;
-  font-family: Lato;
-  background: linear-gradient(to top left, #f5ebeb 0%, #f8d5c3 25%, #e9c1c1 50%, #e9b0c1 75%);
-}
-button {
-  background-repeat: no-repeat;
-  font-family: Lato;
-}
-.Julie {
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.Julie .Julie-title {
-  margin-top: 10px;
-  width: 250px;
-  height: 100px;
-  color: #6b6b6b;
-  border-bottom: 2px dotted #6b6b6b;
-  border-width: 4px;
-  text-align: center;
-}
-.Julie .Julie-title h1 {
-  font-family: Bad script;
-  margin-top: 20px;
-  padding-bottom: -10px;
-  font-size: 55px;
-  font-weight: 200;
-}
-.Julie .Julie-content {
-  margin: 30px 0;
-  width: 75%;
-  height: auto;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.Julie .Julie-content .Julie-btn {
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 30px;
-  height: 150px;
-  width: 50%;
-  border-radius: 5px;
-}
-.Julie .Julie-content .Julie-btn span {
-  font-family: Lato;
-  color: #6b6b6b;
-}
-.Julie .Julie-content .Julie-btn button {
-  margin: 10px 0;
-  padding: 15px 30px 15px 30px;
-  border: 2px solid #6b6b6b;
-  border-radius: 5px;
-  color: #6b6b6b;
-  background-color: transparent;
-  font-size: 15px;
-  font-weight: 400;
-  outline: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.Julie .Julie-content .Julie-btn button:hover {
-  color: #fff;
-  background-color: #6b6b6b;
-  transition: all 0.25s ease;
-}
-.Julie .Julie-content .Julie-btn .blockquote {
-  position: relative;
-  width: 20px;
-  height: 3px;
-  background-color: #a1b585;
-  margin-top: 30px;
-}
-.Julie .Julie-content .Julie-btn .blockquote::before,
-.Julie .Julie-content .Julie-btn .blockquote::after {
-  content: "";
-  position: absolute;
-  background-color: #a1b585;
-  width: 3px;
-  height: 20px;
-  top: -9px;
-  left: calc(50% - 1.5px);
-  transform: rotate(45deg);
-}
-.Julie .Julie-content .Julie-btn .blockquote::after {
-  transform: rotate(-45deg);
-}
 .Julie-board {
   overflow: hidden;
   transition: all 0.2s ease;
@@ -194,25 +96,9 @@ button {
   -webkit-animation: hideAlert 0.3s;
   animation: hideAlert 0.3s;
 }
+
 @media (max-width: 768px) {
-  .Julie {
-    border: none;
-  }
-  .Julie .Julie-title {
-    width: 150px;
-    height: 70px;
-  }
-  .Julie .Julie-title h1 {
-    font-size: 30px;
-  }
-  .Julie .Julie-content {
-    margin: 30px 0;
-    width: 100%;
-  }
-  .Julie .Julie-content .Julie-btn {
-    height: 150px;
-    width: 80%;
-  }
+
   .Julie-Alert {
     min-width: 250px;
     min-height: 200px;
@@ -300,6 +186,9 @@ button {
     -webkit-transform: scale(0.8);
     opacity: 0.3;
   }
+  70% {
+    opacity: 1;
+  }
   100% {
     transform: scale(1);
     -webkit-transform: scale(1);
@@ -311,6 +200,9 @@ button {
     transform: scale(0.8);
     -webkit-transform: scale(0.8);
     opacity: 0.3;
+  }
+  70% {
+    opacity: 1;
   }
   100% {
     transform: scale(1);
@@ -324,6 +216,9 @@ button {
     -webkit-transform: scale(0.8);
     opacity: 0.3;
   }
+  70% {
+    opacity: 1;
+  }
   100% {
     transform: scale(1);
     -webkit-transform: scale(1);
@@ -336,6 +231,9 @@ button {
     -webkit-transform: scale(0.8);
     opacity: 0.3;
   }
+  70% {
+    opacity: 1;
+  }
   100% {
     transform: scale(1);
     -webkit-transform: scale(1);
@@ -346,17 +244,20 @@ button {
   0% {
     transform: scale(0.7);
     -webkit-transform: scale(0.7);
-    opacity: 0.5;
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
   }
   50% {
     transform: scale(1.03);
     -webkit-transform: scale(1.03);
-    opacity: 0.65;
+    opacity: 1;
   }
   70% {
     transform: scale(0.9);
     -webkit-transform: scale(0.9);
-    opacity: 0.85;
+    opacity: 1;
   }
   100% {
     transform: scale(1);
@@ -368,17 +269,20 @@ button {
   0% {
     transform: scale(0.7);
     -webkit-transform: scale(0.7);
-    opacity: 0.5;
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
   }
   50% {
     transform: scale(1.03);
     -webkit-transform: scale(1.03);
-    opacity: 0.65;
+    opacity: 1;
   }
   70% {
     transform: scale(0.9);
     -webkit-transform: scale(0.9);
-    opacity: 0.85;
+    opacity: 1;
   }
   100% {
     transform: scale(1);
@@ -390,17 +294,20 @@ button {
   0% {
     transform: scale(0.7);
     -webkit-transform: scale(0.7);
-    opacity: 0.5;
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
   }
   50% {
     transform: scale(1.03);
     -webkit-transform: scale(1.03);
-    opacity: 0.65;
+    opacity: 1;
   }
   70% {
     transform: scale(0.9);
     -webkit-transform: scale(0.9);
-    opacity: 0.85;
+    opacity: 1;
   }
   100% {
     transform: scale(1);
@@ -412,17 +319,20 @@ button {
   0% {
     transform: scale(0.7);
     -webkit-transform: scale(0.7);
-    opacity: 0.5;
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
   }
   50% {
     transform: scale(1.03);
     -webkit-transform: scale(1.03);
-    opacity: 0.65;
+    opacity: 1;
   }
   70% {
     transform: scale(0.9);
     -webkit-transform: scale(0.9);
-    opacity: 0.85;
+    opacity: 1;
   }
   100% {
     transform: scale(1);
@@ -482,4 +392,3 @@ button {
     display: none;
   }
 }
-
