@@ -178,7 +178,7 @@ button {
 .showJulieAlertBoard {
   -webkit-animation: showAlertBoard 0.3s;
   animation: showAlertBoard 0.3s;
-  opacity: 0.5;
+  opacity: 0.7;
   display: block;
 }
 .showJulieAlert {
@@ -224,8 +224,8 @@ button {
     opacity: 0;
   }
   1% {
-    transform: scale(0.5);
-    -webkit-transform: scale(0.5);
+    transform: scale(0.1);
+    -webkit-transform: scale(0.1);
     display: block;
     opacity: 0;
     border-radius: 50%;
@@ -233,7 +233,7 @@ button {
   100% {
     transform: scale(1);
     -webkit-transform: scale(1);
-    opacity: 0.5;
+    opacity: 0.7;
     border-radius: 1px;
   }
 }
@@ -243,8 +243,8 @@ button {
     opacity: 0;
   }
   1% {
-    transform: scale(0.5);
-    -webkit-transform: scale(0.5);
+    transform: scale(0.1);
+    -webkit-transform: scale(0.1);
     display: block;
     opacity: 0;
     border-radius: 50%;
@@ -252,7 +252,7 @@ button {
   100% {
     transform: scale(1);
     -webkit-transform: scale(1);
-    opacity: 0.5;
+    opacity: 0.7;
     border-radius: 1px;
   }
 }
@@ -262,8 +262,8 @@ button {
     opacity: 0;
   }
   1% {
-    transform: scale(0.5);
-    -webkit-transform: scale(0.5);
+    transform: scale(0.1);
+    -webkit-transform: scale(0.1);
     display: block;
     opacity: 0;
     border-radius: 50%;
@@ -271,7 +271,7 @@ button {
   100% {
     transform: scale(1);
     -webkit-transform: scale(1);
-    opacity: 0.5;
+    opacity: 0.7;
     border-radius: 1px;
   }
 }
@@ -281,8 +281,8 @@ button {
     opacity: 0;
   }
   1% {
-    transform: scale(0.5);
-    -webkit-transform: scale(0.5);
+    transform: scale(0.1);
+    -webkit-transform: scale(0.1);
     display: block;
     opacity: 0;
     border-radius: 50%;
@@ -290,7 +290,7 @@ button {
   100% {
     transform: scale(1);
     -webkit-transform: scale(1);
-    opacity: 0.5;
+    opacity: 0.7;
     border-radius: 1px;
   }
 }
@@ -482,3 +482,4 @@ button {
     display: none;
   }
 }
+
