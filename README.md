@@ -1,7 +1,7 @@
 # JulieAlert
 
-## All you need is ``julie``
 JulieAlert let you display Javascript`s alert function with beautiful custom style. 
+All you need is ``julie``.
 ![JulieAlert.gif](https://raw.githubusercontent.com/lichin-lin/Juliealert/master/JulieAlert.gif)
 
 
@@ -9,9 +9,10 @@ JulieAlert let you display Javascript`s alert function with beautiful custom sty
 ## Setup
 
 download the package and reference the JavaScript and CSS files manually:
-<pre><code>  &lt;script src="assets/juliealert.min.js"&gt;&lt;script&gt;
-  &lt;link href="assets/juliealert.min.css" rel="stylesheet" &gt;
-</code></pre>
+```html
+  <script src="assets/juliealert.min.js"></script>
+  <link href="assets/juliealert.min.css" rel="stylesheet">
+```
 
 ##Example
 
