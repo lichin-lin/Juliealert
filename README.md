@@ -1,7 +1,7 @@
 # JulieAlert
 
-JulieAlert let you display Javascript`s alert function with beautiful custom style. 
-All you need is ``julie``.
+JulieAlert let you display Javascript alert function with beautiful custom style. 
+All you need is ```julie```.
 ![JulieAlert.gif](https://raw.githubusercontent.com/lichin-lin/Juliealert/master/JulieAlert.gif)
 
 
