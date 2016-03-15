@@ -3,6 +3,7 @@
 JulieAlert let you display Javascript alert function with beautiful custom style. 
 <br>
 All you need is ```julie```:grin::grin::grin:.
+<br>
 ![JulieAlert.gif](https://raw.githubusercontent.com/lichin-lin/Juliealert/master/JulieAlert.gif)
 
 
