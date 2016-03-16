@@ -8,8 +8,6 @@ $('.basic button').click(function(){
   });
 });
 
-
-
 $('.try-pop button').click(function(){
   Julie({
     title: "Pop!",
@@ -21,7 +19,6 @@ $('.try-pop button').click(function(){
 });
 
 
-
 $(".try-confirm button").click(function(){
   Julie({
     title: "Cool!Right?",
@@ -30,7 +27,6 @@ $(".try-confirm button").click(function(){
     Pop:false
   });
 });
-
 
 $(".try-error button").click(function(){
   Julie({
@@ -41,6 +37,7 @@ $(".try-error button").click(function(){
     Pop:false
   });
 });
+
 
 // ===== Function Start =====
 function Julie(content){
@@ -61,10 +58,10 @@ function Julie(content){
   $('.Julie-Alert .error').text(content.errorText);
 
   $('.Julie-board').css({
-    width: FindLarge(),
-    height: FindLarge(),
-    top: topOffset() + "px",
-    left: leftOffset() + "px",
+    width: FindLarge()+200,
+    height: FindLarge()+200,
+    top: topOffset()-100 + "px",
+    left: leftOffset()-100 + "px",
   }).addClass('showJulieAlertBoard');
   
     $('.Julie-Alert')

@@ -392,3 +392,39 @@
     display: none;
   }
 }
+
+  .circle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    /*background: white;*/
+    border-radius: 50%;
+    -webkit-animation: scale-circle 0.8s;
+        animation: scale-circle 0.8s;
+  }
+
+  @-webkit-keyframes scale-circle {
+    from {
+    -webkit-transform: scale(0.2);
+        transform: scale(0.2);
+    opacity: 1;
+    }
+    to {
+    -webkit-transform: scale(15);
+        transform: scale(15);
+    opacity: 0;
+    }
+  }
+
+  @keyframes scale-circle {
+    from {
+    -webkit-transform: scale(0.2);
+        transform: scale(0.2);
+    opacity: 1;
+    }
+    to {
+    -webkit-transform: scale(15);
+        transform: scale(15);
+    opacity: 0;
+    }
+  }
