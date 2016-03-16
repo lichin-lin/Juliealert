@@ -1,7 +1,9 @@
 # JulieAlert
 
-JulieAlert let you display Javascript`s alert function with beautiful custom style. 
-All you need is ```julie```
+JulieAlert let you display Javascript alert function with beautiful custom style. 
+<br>
+All you need is ```julie```:grin::grin::grin:.
+<br>
 ![JulieAlert.gif](https://raw.githubusercontent.com/lichin-lin/Juliealert/master/JulieAlert.gif)
 
 
@@ -30,6 +32,9 @@ $('button').click(function(){
   });
 });
 ```
+___
+<br>
+
 
 2.With confirm & error button:
 ```javascript
@@ -43,6 +48,9 @@ $('button').click(function(){
   });
 });
 ```
+___
+<br>
+
 
 
 3.Even with different animation style:
@@ -57,9 +65,11 @@ $('button').click(function(){
   });
 });
 ```
+___
+<br>
 
 
-4.Even with different animation style:
+4.Customized your input in HTML style:
 ```javascript
 $('button').click(function(){
   Julie({
@@ -71,3 +81,5 @@ $('button').click(function(){
   });
 });
 ```
+___
+
