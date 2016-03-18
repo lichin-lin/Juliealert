@@ -2,7 +2,7 @@ $('.basic button').click(function(){
   Julie({
     title: "Julie!",
     text: "Nice to meet you!",
-    confirmText: "ok",
+    confirmText:"got it",
     errorText:"",
     Pop:false,
   });
@@ -22,8 +22,8 @@ $('.try-pop button').click(function(){
 $(".try-confirm button").click(function(){
   Julie({
     title: "Cool!Right?",
-    text: "<h3>Here's a custom-HTML-Style!</h3>",
-    errorText:"cancel!",
+    text: "click the button below!",
+    errorText: JulieUrl("really?","https://github.com/lichin-lin/Juliealert"),
     Pop:false
   });
 });
@@ -51,11 +51,13 @@ function Julie(content){
   }else{
     $('.Julie-Alert .confirm').css("display","inline-block");
   }
-  
+  console.log(content.confirmText);
   $('.Julie-Alert h2').text(content.title);
   $('.Julie-Alert .Alert-content').html(content.text);
-  $('.Julie-Alert .confirm').text(content.confirmText);
-  $('.Julie-Alert .error').text(content.errorText);
+  $('.Julie-Alert .confirm').html(content.confirmText);
+  $('.Julie-Alert .error').html(content.errorText);
+
+  $('body').addClass("stop-scroll");
 
   $('.Julie-board').css({
     width: FindLarge()+200,
@@ -80,6 +82,7 @@ function Julie(content){
   
                           
   $('.Julie-Alert button').click(function(){
+    $('body').removeClass("stop-scroll");
     $('.Julie-board').removeClass('showJulieAlertBoard');
     $('.Julie-Alert').removeClass('showJulieAlert');
     $('.Julie-Alert').removeClass('showJulieAlertPop');
@@ -93,7 +96,9 @@ function Julie(content){
 
 }
 
-
+function JulieUrl(name,url){
+  return " <a href=\"" + url + "\">" + name + "</a> ";
+}
 function isEmpty(str) {
   return typeof str == 'string' && !str.trim() || typeof str == 'undefined' || str === null;
 }

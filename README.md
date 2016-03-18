@@ -25,8 +25,8 @@ using jquery to control ```julie``` function:
 $('button').click(function(){
   Julie({
     title: "Julie!",
-    text: "Basic style!",
-    confirmText: "ok",
+    text: "Nice to meet you!",
+    confirmText:"got it",
     errorText:"",
     Pop:false,
   });
@@ -36,15 +36,15 @@ ___
 <br>
 
 
-2.With confirm & error button:
+2.With different animation style:
 ```javascript
 $('button').click(function(){
   Julie({
-    title: "Julie!",
-    text: "do it!",
-    confirmText: "ok",
-    errorText:"nope!",
-    Pop:false,
+    title: "Pop!",
+    text: "animation feature,Pop-Style",
+    confirmText: "Know!",
+    errorText:"",
+    Pop: true
   });
 });
 ```
@@ -53,15 +53,14 @@ ___
 
 
 
-3.Even with different animation style:
+3.Even \<a\> tag in button:
 ```javascript
-$('button').click(function(){
+$("button").click(function(){
   Julie({
-    title: "Julie!",
-    text: "Popping",
-    confirmText: "wow",
-    errorText:"cool",
-    Pop:true,
+    title: "Cool!Right?",
+    text: "click the button below!",
+    errorText: JulieUrl("really?","https://github.com/lichin-lin/Juliealert"),
+    Pop:false
   });
 });
 ```
@@ -71,13 +70,13 @@ ___
 
 4.Customized your input in HTML style:
 ```javascript
-$('button').click(function(){
+$("button").click(function(){
   Julie({
-    title: "Julie!",
-    text: "<a>HTML inside~</a>",
-    confirmText: "got it",
-    errorText:"good bye",
-    Pop:false,
+    title: "Wait!there's more",
+    text: "<h1>last demo style!<br>IT IS FANCY<br>HTML element<h1>",
+    confirmText: "bro!",
+    errorText:"I will miss you!!",
+    Pop:false
   });
 });
 ```

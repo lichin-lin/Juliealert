@@ -1,4 +1,3 @@
-// ===== Function Start =====
 function Julie(content){
   if(isEmpty(content.errorText)){
     $('.Julie-Alert .error').css("display","none");
@@ -10,17 +9,19 @@ function Julie(content){
   }else{
     $('.Julie-Alert .confirm').css("display","inline-block");
   }
-  
+  console.log(content.confirmText);
   $('.Julie-Alert h2').text(content.title);
   $('.Julie-Alert .Alert-content').html(content.text);
-  $('.Julie-Alert .confirm').text(content.confirmText);
-  $('.Julie-Alert .error').text(content.errorText);
+  $('.Julie-Alert .confirm').html(content.confirmText);
+  $('.Julie-Alert .error').html(content.errorText);
+
+  $('body').addClass("stop-scroll");
 
   $('.Julie-board').css({
-    width: FindLarge(),
-    height: FindLarge(),
-    top: topOffset() + "px",
-    left: leftOffset() + "px",
+    width: FindLarge()+200,
+    height: FindLarge()+200,
+    top: topOffset()-100 + "px",
+    left: leftOffset()-100 + "px",
   }).addClass('showJulieAlertBoard');
   
     $('.Julie-Alert')
@@ -39,6 +40,7 @@ function Julie(content){
   
                           
   $('.Julie-Alert button').click(function(){
+    $('body').removeClass("stop-scroll");
     $('.Julie-board').removeClass('showJulieAlertBoard');
     $('.Julie-Alert').removeClass('showJulieAlert');
     $('.Julie-Alert').removeClass('showJulieAlertPop');
@@ -52,7 +54,9 @@ function Julie(content){
 
 }
 
-
+function JulieUrl(name,url){
+  return " <a href=\"" + url + "\">" + name + "</a> ";
+}
 function isEmpty(str) {
   return typeof str == 'string' && !str.trim() || typeof str == 'undefined' || str === null;
 }

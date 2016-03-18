@@ -56,15 +56,24 @@
   cursor: pointer;
   transition: all 0.25s ease;
 }
+.Julie-Alert .Alert-btn-container button a {
+  text-decoration: none;
+}
 .Julie-Alert .Alert-btn-container button:hover {
   transition: all 0.5s ease;
   border-color: #fff;
+  color: #fff;
+}
+.Julie-Alert .Alert-btn-container button:hover > a {
   color: #fff;
 }
 .Julie-Alert .Alert-btn-container .confirm {
   color: #91c8ff;
   border-color: #91c8ff;
   background-color: transparent;
+}
+.Julie-Alert .Alert-btn-container .confirm a {
+  color: #91c8ff;
 }
 .Julie-Alert .Alert-btn-container .confirm:hover {
   background-color: #91c8ff;
@@ -73,6 +82,9 @@
   color: #fc9f8d;
   border-color: #fc9f8d;
   background-color: transparent;
+}
+.Julie-Alert .Alert-btn-container .error a {
+  color: #fc9f8d;
 }
 .Julie-Alert .Alert-btn-container .error:hover {
   background-color: #fc9f8d;
@@ -96,9 +108,28 @@
   -webkit-animation: hideAlert 0.3s;
   animation: hideAlert 0.3s;
 }
-
 @media (max-width: 768px) {
-
+  .Julie {
+    border: none;
+  }
+  .Julie .Julie-title {
+    width: 150px;
+    height: 70px;
+  }
+  .Julie .Julie-title h1 {
+    font-size: 30px;
+  }
+  .Julie .Julie-content {
+    margin: 30px 0;
+    width: 100%;
+  }
+  .Julie .Julie-content .Julie-extra {
+    font-size: 0.85em;
+  }
+  .Julie .Julie-content .Julie-btn {
+    height: 150px;
+    width: 80%;
+  }
   .Julie-Alert {
     min-width: 250px;
     min-height: 200px;
@@ -392,39 +423,3 @@
     display: none;
   }
 }
-
-  .circle {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    /*background: white;*/
-    border-radius: 50%;
-    -webkit-animation: scale-circle 0.8s;
-        animation: scale-circle 0.8s;
-  }
-
-  @-webkit-keyframes scale-circle {
-    from {
-    -webkit-transform: scale(0.2);
-        transform: scale(0.2);
-    opacity: 1;
-    }
-    to {
-    -webkit-transform: scale(15);
-        transform: scale(15);
-    opacity: 0;
-    }
-  }
-
-  @keyframes scale-circle {
-    from {
-    -webkit-transform: scale(0.2);
-        transform: scale(0.2);
-    opacity: 1;
-    }
-    to {
-    -webkit-transform: scale(15);
-        transform: scale(15);
-    opacity: 0;
-    }
-  }

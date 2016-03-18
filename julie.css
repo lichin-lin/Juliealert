@@ -5,6 +5,9 @@ body {
   font-family: Lato;
   background: linear-gradient(to top left, #f5ebeb 0%, #f8d5c3 25%, #e9c1c1 50%, #e9b0c1 75%);
 }
+body.stop-scroll {
+  overflow: hidden;
+}
 button {
   font-family: Lato;
 }
@@ -170,15 +173,24 @@ button {
   cursor: pointer;
   transition: all 0.25s ease;
 }
+.Julie-Alert .Alert-btn-container button a {
+  text-decoration: none;
+}
 .Julie-Alert .Alert-btn-container button:hover {
   transition: all 0.5s ease;
   border-color: #fff;
+  color: #fff;
+}
+.Julie-Alert .Alert-btn-container button:hover > a {
   color: #fff;
 }
 .Julie-Alert .Alert-btn-container .confirm {
   color: #91c8ff;
   border-color: #91c8ff;
   background-color: transparent;
+}
+.Julie-Alert .Alert-btn-container .confirm a {
+  color: #91c8ff;
 }
 .Julie-Alert .Alert-btn-container .confirm:hover {
   background-color: #91c8ff;
@@ -187,6 +199,9 @@ button {
   color: #fc9f8d;
   border-color: #fc9f8d;
   background-color: transparent;
+}
+.Julie-Alert .Alert-btn-container .error a {
+  color: #fc9f8d;
 }
 .Julie-Alert .Alert-btn-container .error:hover {
   background-color: #fc9f8d;
